@@ -47,11 +47,10 @@
         .btn:hover {
             background: darkred;
         }
-        #surprise-photo {
+        #message {
             display: none;
             margin-top: 20px;
-            width: 250px;
-            border-radius: 10px;
+            font-size: 20px;
             animation: fadeIn 1.5s ease-in-out;
         }
 
@@ -69,14 +68,18 @@
     <div class="container">
         <h1>С 8 Марта, жаным менің❤️</h1>
         <p>Тек сені ғана шын жүрекпен жақсы көре білдім, тек сен ғана маған шынайы махаббатты көрсете білдің, сол үшін мені сені қатты жақсы көремін, жаным менің, радость моя, любовь моя❤️</p>
-        <a href="#" class="btn" onclick="showSurprise()">Жми сюда ❤️</a>
+        <a href="#" class="btn" onclick="showMessage()">Жми сюда ❤️</a>
+        <p id="message">
+            Жаным менің, сені 8 Наурыз мерекесімен құттықтаймын. Әрдайым менің жанымда күлімдеп, жарқырап жүрші.  
+            Маған бұл өмірде махаббаттың не екенін көрсеткен сенсің, бұл өмірде өз махаббатымды таппаймын деп жүргенде,  
+            ойымды өзгерткен сенсің. Бұл әлемде сені жақсы көргендей ешкімді жақсы көрмеймін, барлық махаббатымды сен  
+            ғана ала білдің. Сені қатты жақсы көремін, жаным❤️
+        </p>
     </div>
 
-    <img id="surprise-photo" src="janym.jpg" alt="Сюрприз">
-
     <script>
-        function showSurprise() {
-            document.getElementById('surprise-photo').style.display = 'block';
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
         }
     </script>
 </body>
